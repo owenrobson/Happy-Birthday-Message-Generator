@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Message Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Crimson+Text:wght@600;700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <h1>Happy Birthday Message Generator</h1>
+        <div class="fields-container">
+            <div id="myDivs" class="info">
+                <div class="input-control">
+                    <div class="error"></div>
+                    <input class="input" type="text" id="name1" name="name" placeholder="Their Name" required>
+
+                </div>
+                <br>
+                <div class="input-control">
+                    <div class="error"></div>
+                    <input class="input" type="number" id="age" name="age" placeholder="Age" required>
+
+                </div>
+                <br>
+                <div class="input-control">
+                    <div class="error"></div>
+                    <input class="input" type="text" id="name2" name="name" placeholder="Your Name" required>
+
+                </div>
+                <br>
+            </div>
+            <p class="jokeOption">Add a joke about their age?</p> <br> <br>
+            <div class="radio">
+                <input class="radioButton" type="radio" id="yes" name="addJoke" value="yes">
+                <p for="yes">Yes</p>
+            </div>
+            <div class="radio">
+                <input class="radioButton" type="radio" id="no" name="addJoke" value="no">
+                <p for="no">No</p>
+            </div>
+
+
+            <br>
+
+            <div class="btn">
+                <button id="generateButton">Generate</button>
+            </div>
+
+            <br><br>
+            <div id="output">
+                <p id="message"></p>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+
+
+
+    <script src="script.js"></script>
+    <script defer src="validate.js"></script>
+</body>
+
+</html>
